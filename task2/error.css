@@ -1,0 +1,16 @@
+/* Lara Foqaha 1220071 / Fadi Bassous 1221005 / Veronica Wakileh 1220245 */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.error-message {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info {
+    font-size: 18px;
+}

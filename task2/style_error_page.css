@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.error-message {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.client-info {
+    margin-top: 20px;
+    font-size: 16px;
+    color: gray;
+}

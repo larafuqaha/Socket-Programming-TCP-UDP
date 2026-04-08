@@ -1,0 +1,118 @@
+<!-- Lara Foqaha 1220071 / Fadi Bassous 1221005 / Veronica Wakileh 1220245 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCS3320-Webserver</title>
+    <link rel="stylesheet" type="text/css" href="style_main.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to ENCS3320 - Computer Networks Webserver</h1>
+    </header>
+    <section id="team">
+        <h2>Our Team</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <td>
+                    <img src="lara.png" alt="Lara Foqaha" width="200">
+                    <h3>Lara Foqaha</h3>
+                    <p>ID: 1220071</p>
+                    <ul>
+                        <li>Skills: Java, C, HTML</li>
+                        <li>Hobbies: Chess, Reading</li>
+                        <li>Projects: Built a course prerequisite planner and campus route finder application.</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="veronica.png" alt="Veronica Wakileh" width="200">
+                    <h3>Veronica Wakileh</h3>
+                    <p>ID: 1220245</p>
+                    <ul>
+                        <li>Skills: Java, C, CSS</li>
+                        <li>Hobbies: Reading, Basketball</li>
+                        <li>Projects: Built an application of AVL Tree and Hash table.</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="fadi.png" alt="Fadi Bassous" width="200">
+                    <h3>Fadi Bassous</h3>
+                    <p>ID: 1221005</p>
+                    <ul>
+                        <li>Skills: C, CSS, HTML</li>
+                        <li>Hobbies: Writing, Football</li>
+                        <li>Projects: Built an application of linked lists: Radix Sort.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="topic">
+        <h2>Protocol Layers and Reference Models</h2>
+        <p>Networking systems are complex, requiring a structured approach to enable seamless communication across diverse hardware and software components. The concept of protocol layers and reference models helps organize this complexity and standardize communication processes in network systems.</p>
+        <p class="subtitle">Why Use Layers?</p>
+        <ul>
+            <li>Modular Design: Breaking down the network into layers allows independent development and maintenance of each layer. For instance, improvements in the physical connection method don't affect higher layers like applications.</li>
+            <li>Easy to Understand: Layers break the network into smaller parts, making it easier to see what each part does.</li>
+            <li>Standard Rules: Using layers ensures that devices from different companies can work together.</li>
+        </ul>
+        <p class="subtitle">Main Reference Models</p>
+        <ul>
+            <li>Internet Protocol (IP) Stack</li>
+            <p>This is the model used by the Internet. It has five layers:</p>
+            <ol>
+                <li>Application Layer: Handles programs like websites and email (e.g., HTTP for web, SMTP for email).</li>
+                <li>Transport Layer: Moves data between programs on different devices (e.g., TCP ensures reliable delivery).</li>
+                <li>Network Layer: Finds the best path for data to travel (e.g., IP addresses).</li>
+                <li>Link Layer: Transfers data between devices that are directly connected (e.g., Ethernet, Wi-Fi).</li>
+                <li>Physical Layer: Sends raw data as electrical signals or radio waves.</li>
+            </ol>
+            <p>Each layer does a specific job and works with the layer above and below it.</p>
+            <p>Here is an image illustrating the internet protocol stack:</p>
+            <img src="ip_stack.jpg" alt="internet protocol stack" width="150">
+            <li> OSI Model</li>
+            <p>The OSI model is another way to organize networks. It has seven layers, making it more detailed than the internet stack:</p>
+            <ol>
+                <li>Application Layer.</li>
+                <li>Presentation Layer: Prepares data for the application (e.g., encrypting or compressing files).</li>
+                <li>Session Layer: Manages communication sessions between devices (e.g., keeping a video call active).</li>
+                <li>Transport Layer.</li>
+                <li>Network Layer.</li>
+                <li>Link Layer.</li>
+                <li>Physical Layer.</li>
+            </ol>
+            <p>Unlike the Internet stack, the OSI model has two extra layers: Presentation and Session. These are often included in the Application Layer in modern systems.</p>
+            <p>Here is an image illustrating the ISO Model:</p>
+            <img src="osi_model.jpg" alt="ISO Model" width="150">
+        </ul>
+        <p class="subtitle">How Data Travels (Encapsulation)</p>
+        <p>When data is sent over a network, each layer of the protocol stack adds extra information, known as a header, to help with its delivery.
+            The Application Layer creates the message, such as an email, and passes it to the Transport Layer, which divides it into smaller pieces called segments.
+            The Network Layer adds the destination address to these segments to create packets. The Link Layer then wraps each packet in a frame for local delivery.
+            Finally, the Physical Layer converts the frame into signals, such as radio waves or electrical pulses, for transmission.
+            At the receiving end, this process is reversed. Each layer removes its corresponding header step by step, a process called decapsulation, to rebuild the original message for the recipient.</p>
+        <img src="encapsulation.jpg" alt="Encapsulation image" width="500">
+        <p>However, one drawback of layering is that it adds extra work to the network process, as headers are added and removed at each layer, which takes time and uses resources.
+            Additionally, the fixed structure of the layers can sometimes be inefficient, as it may not always provide the fastest or most optimal way to handle certain tasks.</p>
+            <p class="subtitle">Conclusion</p>
+        <p>Protocol layers and reference models help us manage networks by breaking down tasks into smaller, organized parts.
+            Whether it is the simpler Internet stack or the more detailed OSI model, these systems make networks easier to use, fix, and upgrade. They are key to how the Internet and other networks work today.</p>
+    </section>
+
+     <section id="links">
+        <h2>Resources</h2>
+        <ul>
+            <li><a href="supporting_material_en.html">Supporting Material</a></li>
+            <li><a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank">Textbook Website</a></li>
+            <li><a href="https://ritaj.birzeit.edu/" target="_blank">Ritaj Website</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ENCS3320 - Computer Networks Webserver</p>
+    </footer>
+    
+</body>
+</html>

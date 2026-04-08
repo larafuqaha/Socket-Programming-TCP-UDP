@@ -1,0 +1,30 @@
+<!-- Lara Foqaha 1220071 / Fadi Bassous 1221005 / Veronica Wakileh 1220245 -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المواد الداعمة - ENCS3320</title>
+    <link rel="stylesheet" type="text/css" href="style_material.css">
+</head>
+<body>
+    <header>
+        <h1>المواد الداعمة</h1>
+    </header>
+
+    <section id="request-form">
+        <h2>طلب صورة أو فيديو</h2>
+        <p>أدخل اسم الملف الذي ترغب في طلبه أدناه.</p>
+        <form method="get" action="/process_request">
+            <label for="file-name">اسم الملف:</label>
+            <input type="text" id="file-name" name="file-name" placeholder="أدخل اسم الملف" required>
+            <br>
+            <input type="submit" value="طلب الملف">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ENCS3320 - خادم الشبكات الحاسوبية</p>
+    </footer>
+</body>
+</html>
